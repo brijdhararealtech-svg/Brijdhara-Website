@@ -907,7 +907,35 @@ function initLeadForms() {
             };
             
             saveLead(lead);
-            showFormSuccess(brochureForm, "Brochure Sent!", `The detailed PDF brochure for <b>${lead.project || 'Brijdhara Group'}</b> has been sent to your WhatsApp number (${lead.phone})!`);
+
+            // Construct WhatsApp message URL
+            let whatsappText = `Namaste Brijdhara Group! 🙏\n`;
+            whatsappText += `I would like to request the PDF Brochure & Layout Map.\n\n`;
+            whatsappText += `*Details:*\n`;
+            whatsappText += `• *Name:* ${lead.name}\n`;
+            whatsappText += `• *Phone:* ${lead.phone}\n`;
+            whatsappText += `• *Project Interest:* ${lead.project}\n\n`;
+            whatsappText += `Please send the brochure. Thank you!`;
+            
+            const encodedText = encodeURIComponent(whatsappText);
+            const whatsappUrl = `https://wa.me/917055505641?text=${encodedText}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
+
+            const parent = brochureForm.parentElement;
+            parent.innerHTML = `
+                <div class="success-screen">
+                    <div class="success-icon" style="color:#10b981;"><i class="fas fa-check-circle"></i></div>
+                    <h3>Brochure Request Sent!</h3>
+                    <p>We have opened WhatsApp to connect you with our sales desk to download the PDF brochure for <b>${lead.project}</b>.</p>
+                    <a href="${whatsappUrl}" target="_blank" class="btn btn-primary" style="margin-top: 15px; display:inline-flex; align-items:center; gap:8px; background:#10b981; border:none; padding:10px 20px;">
+                        <i class="fab fa-whatsapp"></i> Open WhatsApp
+                    </a>
+                    <br>
+                    <button class="btn btn-secondary" style="margin-top: 15px;" onclick="location.reload()">Back to Site</button>
+                </div>
+            `;
         });
     }
     
@@ -927,14 +955,33 @@ function initLeadForms() {
             };
             
             saveLead(lead);
+
+            // Construct WhatsApp message URL
+            let whatsappText = `Namaste Brijdhara Group! 🙏\n`;
+            whatsappText += `I would like to request the Price List & Site Map.\n\n`;
+            whatsappText += `*Details:*\n`;
+            whatsappText += `• *Name:* ${lead.name}\n`;
+            whatsappText += `• *Phone:* ${lead.phone}\n`;
+            whatsappText += `• *Project:* ${lead.project}\n`;
+            whatsappText += `• *Budget:* ${lead.budget}\n\n`;
+            whatsappText += `Please share the details. Thank you!`;
+            
+            const encodedText = encodeURIComponent(whatsappText);
+            const whatsappUrl = `https://wa.me/917055505641?text=${encodedText}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
             
             // Show alert since it's inline
             const container = footerContact.parentElement;
             container.innerHTML = `
                 <div style="background:rgba(16,185,129,0.1); border:1px solid #10b981; padding:30px; border-radius:8px; text-align:center;">
                     <i class="fas fa-check-circle" style="color:#10b981; font-size:3rem; margin-bottom:15px;"></i>
-                    <h4 style="color:#fff; margin-bottom:10px;">Thank You!</h4>
-                    <p style="color:var(--color-text-muted); font-size:0.9rem;">Your inquiry has been submitted. Our property adviser will share the price list & availability map to ${lead.phone} shortly. Jai Shri Krishna!</p>
+                    <h4 style="color:#fff; margin-bottom:10px;">Inquiry Sent to WhatsApp!</h4>
+                    <p style="color:var(--color-text-muted); font-size:0.9rem; margin-bottom: 15px;">Your details have been saved, and we have opened WhatsApp to connect you directly with our property adviser.</p>
+                    <a href="${whatsappUrl}" target="_blank" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:8px; background:#10b981; border:none; padding:10px 20px;">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
                 </div>
             `;
         });
