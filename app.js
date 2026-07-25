@@ -3,7 +3,59 @@
 // 1. PROJECTS DATABASE
 const projectsData = [
     {
+        id: "08",
+        name: "Hetvik Plaza & Town",
+        type: "Commercial & Plotting",
+        status: "Available",
+        location: "Opp. Fire Brigade, Near Tehsil, Mant-Vrindavan Road, Mathura",
+        shortFeature: "Fastest growing project on Mant-Vrindavan Road. Premium shops and residential plots.",
+        fullDesc: "Hetvik Plaza & Town is the fastest-growing commercial and residential project located on the prime Mant-Vrindavan Road, directly opposite the Fire Brigade and near the Tehsil. It offers premium commercial shops and residential plots, perfect for high-visibility business and peaceful living.",
+        plotSizes: "Residential Plots 100 sq. yd., 200 sq. yd, Price 20000/-",
+        priceLabel: "Shops Price:",
+        resPrice: "₹35,00,000/- | ₹25,00,000/- | ₹15,00,000/- | ₹10,00,000/-",
+        commPrice: "₹10,00,000 to ₹35,00,000 per shop",
+        paymentPlans: "Contact us for customized payment plans and booking details.",
+        keyFeatures: [
+            "Fastest growing project on Mant-Vrindavan Road",
+            "Prime commercial location opposite Fire Brigade, near Tehsil",
+            "Shops Price: ₹35,00,000/- | ₹25,00,000/- | ₹15,00,000/- | ₹10,00,000/-",
+            "Residential Plots available at ₹20,000 per sq. yd."
+        ],
+        image: "assets/hetvik_plaza.jpg",
+        roi: {
+            started: "New Launch",
+            now: "Prime Value",
+            gain: "High Appreciation"
+        }
+    },
+    {
         id: "01",
+        name: "Shree Banshivat Dhaam",
+        type: "Plotting",
+        status: "Available",
+        location: "Opp. Petrol Pump, Near Tehsil, Mant-Raya Road, Mathura",
+        shortFeature: "Fastest growing project on Mant-Raya Road. Petrol pump front, near Tehsil.",
+        fullDesc: "Shree Banshivat Dhaam is the fastest-growing residential plotted township located directly on the Mant-Raya Road, opposite the petrol pump and near the Mant Tehsil office. Blending high-growth connectivity with affordable pricing, it features attractive Cash & EMI payment options (only 40% advance booking & balance in 24 easy monthly installments).",
+        plotSizes: "100 sq. yd., 200 sq. yd. residential plots",
+        resPrice: "₹9,000 per sq. yd. (Cash) / ₹10,000 per sq. yd. (EMI)",
+        commPrice: "Available on Request",
+        paymentPlans: "Cash Plan: ₹9,000/sq. yd. full payment or Easy EMI: ₹10,000/sq. yd. with 40% advance & 24 easy monthly installments.",
+        keyFeatures: [
+            "Fastest growing project on Mant-Raya Road corridor",
+            "Prime location directly opposite petrol pump and near Tehsil office",
+            "Easy EMI Plan with 40% advance booking & 24 monthly installments",
+            "Wide internal blacktop roads, sweet drinking water & drainage system",
+            "100% clear title with immediate registration and mutation (dakhil kharij)"
+        ],
+        image: "assets/banshivat_dhaam_colony.jpg",
+        roi: {
+            started: "₹6,800",
+            now: "₹9,000",
+            gain: "32% Appreciation"
+        }
+    },
+    {
+        id: "02",
         name: "Brij Green Highway",
         type: "Plotting",
         status: "Available",
@@ -21,7 +73,7 @@ const projectsData = [
             "Secure gated colony with round-the-clock security guarding",
             "Beautifully landscaped parks and temple area inside"
         ],
-        image: "assets/brij_green_highway.png",
+        image: "assets/brij_green_highway.jpg",
         roi: {
             started: "₹6,500",
             now: "₹10,000",
@@ -34,20 +86,21 @@ const projectsData = [
         type: "Plotting",
         status: "Available",
         location: "Near K.N. International School, Kosi Khurd, Mathura",
-        shortFeature: "Family-centric development. Peaceful, secure environment close to top schools.",
-        fullDesc: "Kanha Kunj is an ideal, family-focused residential community situated near K.N. International School on Bharatpur Road in Kosi Khurd. Blending Vrindavan's spiritual vibes with modern convenience, it provides a safe, green environment perfect for building your dream home near key educational and medical facilities.",
+        shortFeature: "Monsoon Special 10% Discount! Family-centric development in a peaceful, secure environment.",
+        fullDesc: "Kanha Kunj is an ideal, family-focused residential community situated near K.N. International School on Bharatpur Road in Kosi Khurd. Blending Vrindavan's spiritual vibes with modern convenience, it provides a safe, green environment perfect for building your dream home. Limited Time: Get a 10% Monsoon Special Discount on all bookings!",
         plotSizes: "100 sq. yd., 200 sq. yd., & dedicated commercial spaces",
         resPrice: "₹14,000 per sq. yd.",
         commPrice: "₹25,000 per sq. yd.",
-        paymentPlans: "Flexible booking amount (11,000/-) followed by 18-month easy installments.",
+        paymentPlans: "Flexible booking amount (11,000/-) followed by 18-month easy installments. Book now for a 10% Monsoon Discount!",
         keyFeatures: [
+            "🌧️ Monsoon Special Offer: Get 10% special discount on booking!",
             "Just 2 minutes walk from K.N. International School",
             "Gated colony with 24/7 security CCTV monitoring",
             "Lush green environment and dedicated children's play parks",
             "Rainwater harvesting and robust drainage systems",
             "100% clear and dispute-free registry and immediate mutation (dakhil kharij)"
         ],
-        image: "assets/kanha_kunj.png",
+        image: "assets/kanha_kunj.jpg",
         roi: {
             started: "₹9,800",
             now: "₹14,000",
@@ -288,7 +341,7 @@ const chatbotQA = [
     },
     {
         keys: ["available project", "plots list", "available plots", "konsa project", "projects list", "show projects"],
-        answer: "We have several premium projects: <br>1. <b>Brij Green Highway</b> (Mathura-Bareilly Highway) - Starting ₹10k/sq.yd<br>2. <b>Kanha Kunj</b> (Kosi Khurd) - Starting ₹14k/sq.yd<br>3. <b>Padma Greens</b> (Vrindavan VIP Road) - Limited plots at ₹19.8k/sq.yd<br>4. <b>Brij Town</b> (Goverdhan Road) - Limited units at ₹17.5k/sq.yd<br>5. <b>Brijvaas</b> (Radhapuram Link Road) - Limited units at ₹19.2k/sq.yd<br>Which project matches your preference? I can share details!"
+        answer: "We have several premium projects: <br>1. <b>Hetvik Plaza & Town</b> (Mant-Vrindavan Road) - Shops from ₹10 Lakhs & Plots<br>2. <b>Shree Banshivat Dhaam</b> (Mant-Raya Road) - Starting ₹9k/sq.yd (EMI available)<br>3. <b>Brij Green Highway</b> (Mathura-Bareilly Highway) - Starting ₹10k/sq.yd<br>4. <b>Kanha Kunj</b> (Kosi Khurd) - Starting ₹14k/sq.yd (10% Monsoon Discount!)<br>5. <b>Padma Greens</b> (Vrindavan VIP Road) - Limited plots at ₹19.8k/sq.yd<br>6. <b>Brij Town</b> (Goverdhan Road) - Limited units at ₹17.5k/sq.yd<br>7. <b>Brijvaas</b> (Radhapuram Link Road) - Limited units at ₹19.2k/sq.yd<br>Which project matches your preference? I can share details!"
     },
     {
         keys: ["best investment", "good for investment", "highest roi", "investment plots", "investment kahan karein", "best choice"],
@@ -337,6 +390,14 @@ const chatbotQA = [
     {
         keys: ["contact number", "phone", "whatsapp", "call", "mobile", "sales team", "email", "brijdhararealtech"],
         answer: "You can reach us at:<br>• Primary Phone/WhatsApp: <b>7055505641</b><br>• Director Consultant: <b>9719369022</b><br>• Sales Desk: <b>7037907338</b><br>• Email: <b>brijdhararealtech@gmail.com</b><br>Would you like our representative to call you right away?"
+    },
+    {
+        keys: ["hetvik plaza", "hetvik town", "hetvik", "mant-vrindavan road", "fire brigade"],
+        answer: "<b>Hetvik Plaza & Town</b> is our newly launched premium commercial and residential project located on <b>Mant-Vrindavan Road</b>, opposite the Fire Brigade and near the Tehsil. <br><br><b>Key Details:</b><br>• <b>Shops Price:</b> ₹35,00,000/- | ₹25,00,000/- | ₹15,00,000/- | ₹10,00,000/-<br>• <b>Plots:</b> ₹20,000 / sq. yd.<br>Would you like to download the layout map or book a free site tour?"
+    },
+    {
+        keys: ["shree banshivat dhaam", "banshivat", "vansibat", "vanshibat", "banshivat dhaam", "banshivat dam", "mant raya road"],
+        answer: "<b>Shree Banshivat Dhaam</b> is our newest and fastest-growing plotting project located on the <b>Mant-Raya Road</b>, directly opposite the petrol pump and near the Mant Tehsil office. <br><br><b>Key Details:</b><br>• <b>Plot Sizes:</b> 100 sq. yd. & 200 sq. yd.<br>• <b>Cash Price:</b> ₹9,000 / sq. yd.<br>• <b>EMI Price:</b> ₹10,000 / sq. yd.<br>• <b>Payment Plan:</b> Only 40% advance booking, balance in 24 monthly installments.<br>Would you like to download the layout map or book a free site tour?"
     },
     {
         keys: ["hello", "hi", "namaste", "jai shri krishna", "hey", "radhe radhe", "pranam"],
@@ -494,8 +555,8 @@ function renderProjects(projects) {
                     </div>
                     
                     <div class="price-metric">
-                        <span class="price-label">Price / Sq. Yd:</span>
-                        <span class="price-value">${proj.resPrice}</span>
+                        <span class="price-label">${proj.priceLabel || 'Price / Sq. Yd:'}</span>
+                        <span class="price-value" style="font-size:0.8rem">${proj.resPrice}</span>
                     </div>
 
                     ${proj.roi ? `
