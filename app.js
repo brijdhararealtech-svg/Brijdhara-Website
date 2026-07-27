@@ -308,7 +308,7 @@ const projectsData = [
             "Secure gated enclave with high boundary walls",
             "Immediate registration and dakhil-kharij mutation"
         ],
-        image: "assets/harshita_town.png",
+        image: "assets/harshita_town.jpg",
         roi: {
             started: "₹5,800",
             now: "₹16,500",
