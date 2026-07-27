@@ -126,7 +126,7 @@ const projectsData = [
             "Water treatment plant and overhead water storage tank",
             "Lush landscaped jogging tracks and community parklands"
         ],
-        image: "assets/padma_greens.png",
+        image: "assets/padma_greens.jpg",
         roi: {
             started: "₹7,500",
             now: "₹19,800",
@@ -152,7 +152,7 @@ const projectsData = [
             "Large designer parks and community space for spiritual gatherings",
             "Approved planning with wide roads and high-voltage electricity transformer"
         ],
-        image: "assets/brij_town.png",
+        image: "assets/brij_town.jpg",
         roi: {
             started: "₹6,000",
             now: "₹17,500",
@@ -178,7 +178,7 @@ const projectsData = [
             "Equipped with kids play zone, elders garden, and yoga lawn",
             "100% clear registry, prompt mutation, and direct bank finance facility"
         ],
-        image: "assets/brijvaas.png",
+        image: "assets/brijvaas.jpg",
         roi: {
             started: "₹7,000",
             now: "₹19,200",
@@ -204,7 +204,7 @@ const projectsData = [
             "Planned green landscaping with dedicated tree lines",
             "High-capacity electric poles and reliable water lines"
         ],
-        image: "assets/laxmi_town.png",
+        image: "assets/laxmi_town.jpg",
         roi: {
             started: "₹5,000",
             now: "₹15,500",
@@ -230,7 +230,7 @@ const projectsData = [
             "Gated security with regular patrols",
             "Proper drainage system connected to the main municipal line"
         ],
-        image: "assets/baldev_city.png",
+        image: "assets/baldev_city.jpg",
         roi: {
             started: "₹5,500",
             now: "₹16,800",
@@ -256,7 +256,7 @@ const projectsData = [
             "Ready-to-build layout with municipal water connection approval",
             "100% legal clearance and clear documentation"
         ],
-        image: "assets/kundan_kunj.png",
+        image: "assets/kundan_kunj.jpg",
         roi: {
             started: "₹5,200",
             now: "₹15,200",
@@ -282,7 +282,7 @@ const projectsData = [
             "Dedicated temple site and community center inside",
             "100% clear title with legal guarantee from Brijdhara Group"
         ],
-        image: "assets/padma_kunj.png",
+        image: "assets/padma_kunj.jpg",
         roi: {
             started: "₹5,000",
             now: "₹15,100",
