@@ -12,13 +12,13 @@ const projectsData = [
         fullDesc: "Hetvik Plaza & Town is the fastest-growing commercial and residential project located on the prime Mant-Vrindavan Road, directly opposite the Fire Brigade and near the Tehsil. It offers premium commercial shops and residential plots, perfect for high-visibility business and peaceful living.",
         plotSizes: "Residential Plots 100 sq. yd., 200 sq. yd, Price 20000/-",
         priceLabel: "Shops Price:",
-        resPrice: "₹35,00,000/- | ₹25,00,000/- | ₹15,00,000/- | ₹10,00,000/-",
-        commPrice: "₹10,00,000 to ₹35,00,000 per shop",
+        resPrice: "₹40,00,000/- | ₹25,00,000/- | ₹20,00,000/- | ₹10,00,000/-",
+        commPrice: "₹10,00,000 to ₹40,00,000 per shop",
         paymentPlans: "Contact us for customized payment plans and booking details.",
         keyFeatures: [
             "Fastest growing project on Mant-Vrindavan Road",
             "Prime commercial location opposite Fire Brigade, near Tehsil",
-            "Shops Price: ₹35,00,000/- | ₹25,00,000/- | ₹15,00,000/- | ₹10,00,000/-",
+            "Shops Price: ₹40,00,000/- | ₹25,00,000/- | ₹20,00,000/- | ₹10,00,000/-",
             "Residential Plots available at ₹20,000 per sq. yd."
         ],
         image: "assets/hetvik_plaza.jpg",
@@ -393,7 +393,7 @@ const chatbotQA = [
     },
     {
         keys: ["hetvik plaza", "hetvik town", "hetvik", "mant-vrindavan road", "fire brigade"],
-        answer: "<b>Hetvik Plaza & Town</b> is our newly launched premium commercial and residential project located on <b>Mant-Vrindavan Road</b>, opposite the Fire Brigade and near the Tehsil. <br><br><b>Key Details:</b><br>• <b>Shops Price:</b> ₹35,00,000/- | ₹25,00,000/- | ₹15,00,000/- | ₹10,00,000/-<br>• <b>Plots:</b> ₹20,000 / sq. yd.<br>Would you like to download the layout map or book a free site tour?"
+        answer: "<b>Hetvik Plaza & Town</b> is our newly launched premium commercial and residential project located on <b>Mant-Vrindavan Road</b>, opposite the Fire Brigade and near the Tehsil. <br><br><b>Key Details:</b><br>• <b>Shops Price:</b> ₹40,00,000/- | ₹25,00,000/- | ₹20,00,000/- | ₹10,00,000/-<br>• <b>Plots:</b> ₹20,000 / sq. yd.<br>Would you like to download the layout map or book a free site tour?"
     },
     {
         keys: ["shree banshivat dhaam", "banshivat", "vansibat", "vanshibat", "banshivat dhaam", "banshivat dam", "mant raya road"],
